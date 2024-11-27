@@ -104,8 +104,8 @@ if game.GameId == 4417057922 then
     end
     updateLocals()
 
-    loadstring(game:HttpGet("https://pastebin.com/6LAsEgvn", true))()if workspace:FindFirstChild('Residence') and workspace.Residence:FindFirstChild('Spawn') then
-    teleports.stage1_residence = workspace.Residence.Spawn end
+    -- loadstring(game:HttpGet("https://pastebin.com/6LAsEgvn", true))()if workspace:FindFirstChild('Residence') and workspace.Residence:FindFirstChild('Spawn') then
+    -- teleports.stage1_residence = workspace.Residence.Spawn end
     
     local Windows = RAYFIELD:CreateWindow({
 		Name = '🦘 BESYG1JP: Your Skill 🦘',
