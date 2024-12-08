@@ -1,0 +1,25 @@
+Stage1: Around workspace
+Stage2: Moon
+Stage3: Pink
+Stage4: Red
+Stage5: Blue
+Stage6: Green
+
+-- game:GetService("ReplicatedStorage").RemoteEvent:FireServer()
+AntiTeleport - https://pastebin.com/AgqGRefH
+Gamepass bypass - https://pastebin.com/gcuVLgrG
+
+game:GetService("RunService").RenderStepped:Connect(function()
+    local savedCFrame = game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame
+    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Green.Stage.Model.Win, 1)
+    firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Green.Stage.Model.Win, 0)
+    game.Players.LocalPlayer.Character:WaitForChild('HumanoidRootPart').CFrame = savedCFrame
+end)
+
+-- while true do
+--     task.wait(0.0001)
+--     firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Green.Stage.Model.Win, 1)
+--     firetouchinterest(game.Players.LocalPlayer.Character.HumanoidRootPart, workspace.Green.Stage.Model.Win, 0)
+-- end
+
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("Friend"):FireServer(7549735967)
